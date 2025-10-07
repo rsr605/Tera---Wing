@@ -1,0 +1,43 @@
+{
+  "uav": {
+    "min_altitude": 5.0,
+    "max_altitude": 120.0,
+    "safe_battery": 20.0,
+    "emergency_battery": 10.0
+  },
+  "obstacle_detection": {
+    "detection_range": 50.0,
+    "critical_distance": 10.0,
+    "warning_distance": 20.0,
+    "confidence_threshold": 0.7
+  },
+  "terrain_mapping": {
+    "resolution": 1.0,
+    "elevation_accuracy": 0.1,
+    "max_map_age": 86400
+  },
+  "weather": {
+    "api_key": "",
+    "api_endpoint": "",
+    "update_interval": 300,
+    "max_wind_speed": 12.0,
+    "max_gust_speed": 15.0,
+    "min_visibility": 1000.0,
+    "max_precipitation": 2.0
+  },
+  "coordination": {
+    "min_separation": 10.0,
+    "max_fleet_size": 10,
+    "heartbeat_timeout": 30.0
+  },
+  "video": {
+    "target_fps": 30,
+    "resolution": [1920, 1080],
+    "buffer_size": 10
+  },
+  "system": {
+    "log_level": "INFO",
+    "data_dir": "./data",
+    "model_dir": "./models"
+  }
+}
